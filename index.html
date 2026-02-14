@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunny Kumar | Data Analyst</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Sunny Kumar</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Data Analyst</h1>
+    <h2><span class="typing"></span></h2>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Computer Science graduate specializing in Data Analytics and Machine Learning.
+        Skilled in Python, SQL, Power BI, and predictive modeling to drive business decisions.
+    </p>
+</section>
+<section id="sql">
+    <h2>SQL Query Showcase</h2>
+
+    <div class="sql-card">
+        <h3>Customer Churn Analysis Query</h3>
+        <pre><code class="language-sql">
+SELECT contract_type,
+       COUNT(*) AS total_customers,
+       SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned_customers
+FROM telecom_data
+GROUP BY contract_type
+ORDER BY churned_customers DESC;
+</code></pre>
+
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="edu-card">
+        <h3>B.Tech in Computer Science</h3>
+        <p>JIS College of Engineering</p>
+        <p>2021 – 2026</p>
+        <P>GRADE 80.25%</P>
+    </div>
+    <div class="edu-card">
+        <h3>High School</h3>
+        <p>M.R.J.D INTER COLLEGE</p>
+        <p>2019 – 2021</p>
+        <P>GRADE 82.6%</P>
+    </div>
+    <div class="edu-card">
+        <h3>SCHOOL </h3>
+        <p>ST.JOSEPH PUBLIC SCHOOL </p>
+        <p>2018 – 2019</p>
+        <P>GRADE 89%</P>
+    </div>
+
+</section>
+<section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <h3>Coursera Data Analytics</h3>
+            <p>Completed professional data analytics certification.</p>
+        </div>
+
+        <div class="cert-card">
+            <h3>Python for Data Science</h3>
+            <p>Covered NumPy, Pandas, Visualization & ML basics.</p>
+        </div>
+
+        <div class="cert-card">
+            <h3>SQL Advanced Certification</h3>
+            <p>Mastered complex joins, subqueries & optimization.</p>
+        </div>
+
+        <!-- Add unlimited certifications like this -->
+        
+    </div>
+</section>
+<div class="cert-card">
+    <h3>Coursera Data Analytics</h3>
+    <p>Professional Certification</p>
+    <a href="certificates\Data Analytics.pdf" target="_blank" class="btn">View</a>
+    <a href="certificates\Data Analytics.pdf" download class="btn">Download</a>
+</div>
+<div class="cert-card">
+    <h3>SQL Advanced Certification</h3>
+    <p>Professional Certification</p>
+    <a href="certificates\mysql.pdf" target="_blank" class="btn">View</a>
+    <a href="certificates\mysql.pdf" download class="btn">Download</a>
+</div>
+<div class="cert-card">
+    <h3>Python for Data Science</h3>
+    <p>Professional Certification</p>
+    <a href="certificates\Python_For_DataAnalytics.pdf" target="_blank" class="btn">View</a>
+    <a href="certificates\Python_For_DataAnalytics.pdf" download class="btn">Download</a>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Case Studies</h2>
+
+    <div class="project">
+        <h3>Telecom Churn Prediction</h3>
+        <p><strong>Problem:</strong> High churn rate.</p>
+        <p><strong>Approach:</strong> EDA + ML models.</p>
+        <p><strong>Impact:</strong> 85% prediction accuracy.</p>
+    </div>
+
+    <div class="project">
+        <h3>Sales Dashboard</h3>
+        <p><strong>Problem:</strong> Poor revenue tracking.</p>
+        <p><strong>Approach:</strong> Power BI dashboard.</p>
+        <p><strong>Impact:</strong> Faster business decisions.</p>
+    </div>
+
+</section>
+<section id="analytics">
+    <h2>Analytics Showcase</h2>
+
+    <div class="chart-container">
+        <canvas id="lineChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+    </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact +91 9113423652</h2>
+    <p>Email: sunny9113423652@gmail.com</p>
+    <p>GitHub: github.com/yourgithub</p>
+    <p><strong>Open for Data Analyst & ML Roles</strong></p>
+</section>
+
+<footer>
+    © 2026 Sunny Kumar | Advanced Data Portfolio
+</footer>
+
+
+
+</body>
+</html>
